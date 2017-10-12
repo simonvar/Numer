@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_converter"
+        android:icon="@drawable/ic_menu_converter"
+        android:title="@string/menu_title_converter" />
+
+    <item
+        android:id="@+id/navigation_calculator"
+        android:icon="@drawable/ic_menu_calculator"
+        android:title="@string/menu_title_calculator" />
+
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/ic_menu_info"
+        android:title="@string/menu_title_info" />
+
+</menu>

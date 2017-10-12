@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Конвертер</string>
+
+    <string name="clear_all_button_text">Очистить все</string>
+    <string name="result_text_view_hint">Результат</string>
+    <string name="enter_number_edit_text_hint">Введите число</string>
+    <string name="from_edit_text_hint">Из</string>
+    <string name="to_edit_text_hint">В</string>
+    <string name="error_number_not_correct">Число содержит недопустимые символы!</string>
+    <string name="error_system_from_not_correct">Система счисления содержит недопустимые символы!</string>
+    <string name="error_system_to_not_correct">Система счисления содержит недопустимые символы!</string>
+    <string name="error_system_range_from">Система может быть от 2 до 36</string>
+    <string name="error_system_range_to">Система может быть от 2 до 36</string>
+    <string name="error_field_is_empty">Заполните все поля!</string>
+    <string name="error_number_not_in_system">Число содержит символы недопустимые системой!</string>
+    <string name="menu_item_help">Помощь</string>
+    <string name="menu_item_calculator">Калькулятор</string>
+    <string name="menu_item_about">Инфо</string>
+    <string name="menu_item_converter">Конвертер</string>
+    <string name="error_too_big">Результат слишком большой…</string>
+    <string name="info_name">Инфо</string>
+    <string name="calculator_name">Калькулятор</string>
+    <string name="in_other_system">В других системах: </string>
+    <string name="how_did_it_happen">Как это получилось?</string>
+    <string name="app_name_version">Конвертер систем счисления v2.0</string>
+    <string name="help_text_translate">Переведем число из %1$s-ой системы в %2$s-ую систему</string>
+    <string name="tv_help_task">Задача</string>
+    <string name="help_step_1">Шаг 1</string>
+    <string name="help_step_2">Шаг 2</string>
+    <string name="help_answer">Ответ</string>
+    <string name="info_thx">Спасибо, что используете это приложение!</string>
+    <string name="info_rate">Оценить</string>
+    <string name="info_other_app">Другие приложения</string>
+    <string name="author_name">Simon Tritin</string>
+    <string name="algorithm_div">Деление\n\n</string>
+    <string name="algorithm_ost">Остаток\n\n</string>
+    <string name="algorithm_res">Ответ\n\n</string>
+    <string name="copied">Скопировано в буфер обмена</string>
+    <string name="menu_title_converter">Конвертер</string>
+    <string name="menu_title_calculator">Калькулятор</string>
+    <string name="menu_title_info">Инфо</string>
+    <string name="info_developer">Разработчик:</string>
+
+</resources>

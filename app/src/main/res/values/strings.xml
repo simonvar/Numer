@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="info_name">Info</string>
+    <string name="calculator_name">Calculator</string>
+
+    <string name="menu_item_calculator">Calculator</string>
+    <string name="result_text_view_hint">Result</string>
+    <string name="clear_all_button_text">Clear all</string>
+    <string name="to_edit_text_hint">To</string>
+    <string name="from_edit_text_hint">From</string>
+    <string name="enter_number_edit_text_hint">Enter number</string>
+
+    <string name="error_number_not_correct">The number contains invalid characters!</string>
+    <string name="error_system_from_not_correct">Numbering system contains invalid characters!</string>
+    <string name="error_system_to_not_correct">Numbering system contains invalid characters!</string>
+
+    <string name="error_system_range_from">The system can be from 2 to 36</string>
+    <string name="error_system_range_to">The system can be from 2 to 36</string>
+
+    <string name="error_field_is_empty">Fill all fields</string>
+    <string name="error_number_not_in_system">The number contains invalid characters system!</string>
+    <string name="menu_item_help">Help</string>
+    <string name="menu_item_about">Info</string>
+    <string name="menu_item_converter">Converter</string>
+    <string name="error_too_big">Result is too big…</string>
+    <string name="in_other_system">In other system:</string>
+    <string name="how_did_it_happen">How did it happen?</string>
+    <string name="app_name_version">Number system converter v2.5</string>
+
+    <string name="help_text_translate">Translate number from %1$s system to %2$s</string>
+    <string name="tv_help_task">Task</string>
+    <string name="help_step_1">Step 1</string>
+    <string name="help_step_2">Step 2</string>
+    <string name="help_answer">Answer</string>
+    <string name="author_name">Simon Tritin</string>
+    <string name="info_other_app">Other App</string>
+    <string name="info_rate">Rate</string>
+    <string name="info_thx">Thank you for using this app!</string>
+
+    <string name="algorithm_div">Division\n\n</string>
+    <string name="algorithm_ost">Modulo\n\n</string>
+    <string name="algorithm_res">Answer\n\n</string>
+    <string name="copied">Copied</string>
+    <string name="menu_title_converter">Converter</string>
+    <string name="menu_title_calculator">Calculator</string>
+    <string name="menu_title_info">Info</string>
+    <string name="info_gmail" translatable="false">Gmail:</string>
+    <string name="info_github" translatable="false">GitHub:</string>
+    <string name="link_email" translatable="false">semavar3@gmail.com</string>
+    <string name="link_github" translatable="false">https://github.com/simonvar</string>
+    <string name="info_developer">Developer:</string>
+
+</resources>
