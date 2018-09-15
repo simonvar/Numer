@@ -1,15 +1,7 @@
 package com.shine.semav.numbersystem;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -17,8 +9,11 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.shine.semav.numbersystem.common.Translator;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 /**
  * Created by semav on 04.09.2016.
@@ -47,15 +42,15 @@ public class CalculatorFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_calculator, container, false);
         setHasOptionsMenu(true);
 
-        mEditTextNumber1 = (EditText)view.findViewById(R.id.calculator_number_1);
-        mEditTextNumber2 = (EditText)view.findViewById(R.id.calculator_number_2);
-        mEditTextNumberSystem1 = (EditText) view.findViewById(R.id.calculator_number_system_1);
-        mEditTextNumberSystem2 = (EditText) view.findViewById(R.id.calculator_number_system_2);
+        mEditTextNumber1 = view.findViewById(R.id.calculator_number_1);
+        mEditTextNumber2 = view.findViewById(R.id.calculator_number_2);
+        mEditTextNumberSystem1 = view.findViewById(R.id.calculator_number_system_1);
+        mEditTextNumberSystem2 = view.findViewById(R.id.calculator_number_system_2);
 
-        mTextViewResult = (TextView) view.findViewById(R.id.calculator_result);
-        mEditTextResultSystem = (EditText) view.findViewById(R.id.calculator_result_system);
+        mTextViewResult = view.findViewById(R.id.calculator_result);
+        mEditTextResultSystem = view.findViewById(R.id.calculator_result_system);
 
-        mButtonClearAll = (ImageButton) view.findViewById(R.id.calculator_clear_all);
+        mButtonClearAll = view.findViewById(R.id.calculator_clear_all);
         mButtonClearAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,11 +63,11 @@ public class CalculatorFragment extends Fragment {
             }
         });
 
-        RadioButton plus = (RadioButton) view.findViewById(R.id.calculator_radio_plus);
+        RadioButton plus = view.findViewById(R.id.calculator_radio_plus);
         plus.setChecked(true);
         mSign = 1;
 
-        mRadioGroup = (RadioGroup) view.findViewById(R.id.calculator_radio_group);
+        mRadioGroup = view.findViewById(R.id.calculator_radio_group);
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {

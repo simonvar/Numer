@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ScrollView
-
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -33,7 +29,7 @@
                     android:layout_weight="1"
                     android:hint="@string/enter_number_edit_text_hint"
                     android:maxLength="15"
-                    android:singleLine="true"/>
+                    android:singleLine="true" />
 
                 <ImageButton
                     android:id="@+id/delete_number_button"
@@ -42,7 +38,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="7"
                     android:background="@null"
-                    app:srcCompat="@drawable/ic_clear_number"/>
+                    app:srcCompat="@drawable/ic_clear_number" />
             </LinearLayout>
 
             <LinearLayout
@@ -61,7 +57,7 @@
                     android:layout_weight="5"
                     android:hint="@string/from_edit_text_hint"
                     android:inputType="number"
-                    android:maxLength="2"/>
+                    android:maxLength="2" />
 
                 <ImageButton
                     android:id="@+id/reverse_systems_button"
@@ -69,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:background="@null"
-                    app:srcCompat="@drawable/ic_change_system"/>
+                    app:srcCompat="@drawable/ic_change_system" />
 
                 <EditText
                     android:id="@+id/system_to_edit_text"
@@ -78,7 +74,7 @@
                     android:layout_weight="5"
                     android:hint="@string/to_edit_text_hint"
                     android:inputType="number"
-                    android:maxLength="2"/>
+                    android:maxLength="2" />
             </LinearLayout>
 
             <LinearLayout
@@ -88,15 +84,15 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:paddingLeft="4dp"
-                    android:paddingRight="4dp"
                     android:id="@+id/how_it_happen"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
-                    app:srcCompat="@drawable/ic_how_it"
                     android:layout_weight="5"
-                    android:background="@color/colorPrimaryDark"/>
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    app:srcCompat="@drawable/ic_how_it" />
 
                 <TextView
                     android:id="@+id/result_text_view"
@@ -105,8 +101,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:hint="@string/result_text_view_hint"
-                    android:padding="16dp"/>
-
+                    android:padding="16dp" />
 
 
                 <ImageButton
@@ -116,7 +111,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="5"
                     android:background="@color/colorAccent"
-                    app:srcCompat="@drawable/ic_clear_all"/>
+                    app:srcCompat="@drawable/ic_clear_all" />
 
             </LinearLayout>
 
@@ -126,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="@string/in_other_system"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -141,7 +136,7 @@
                     android:background="@color/colorAccent"
                     android:padding="8dp"
                     android:text="2"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/result_2_system"
@@ -150,7 +145,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:paddingLeft="8dp"
-                    android:paddingTop="6dp"/>
+                    android:paddingTop="6dp" />
 
             </LinearLayout>
 
@@ -167,7 +162,7 @@
                     android:background="@color/colorAccent"
                     android:padding="8dp"
                     android:text="8"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/result_8_system"
@@ -176,7 +171,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:paddingLeft="8dp"
-                    android:paddingTop="6dp"/>
+                    android:paddingTop="6dp" />
 
             </LinearLayout>
 
@@ -193,7 +188,7 @@
                     android:background="@color/colorAccent"
                     android:padding="8dp"
                     android:text="10"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/result_10_system"
@@ -202,7 +197,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:paddingLeft="8dp"
-                    android:paddingTop="6dp"/>
+                    android:paddingTop="6dp" />
 
             </LinearLayout>
 
@@ -219,7 +214,7 @@
                     android:background="@color/colorAccent"
                     android:padding="8dp"
                     android:text="16"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/result_16_system"
@@ -228,7 +223,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:paddingLeft="8dp"
-                    android:paddingTop="6dp"/>
+                    android:paddingTop="6dp" />
 
             </LinearLayout>
 
@@ -237,12 +232,12 @@
     </ScrollView>
 
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating_action_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
-        app:srcCompat="@drawable/ic_convert_fab"/>
+        app:srcCompat="@drawable/ic_convert_fab" />
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
