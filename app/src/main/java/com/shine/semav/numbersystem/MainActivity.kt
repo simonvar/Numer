@@ -7,31 +7,12 @@ import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
-
 class MainActivity : AppCompatActivity() {
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-        when (item.itemId) {
-            R.id.navigation_converter -> {
-                changeFragment(ConverterFragment(), getString(R.string.menu_item_converter))
-                return@OnNavigationItemSelectedListener true
-            }
-            R.id.navigation_calculator -> {
-                changeFragment(CalculatorFragment(), getString(R.string.menu_title_calculator))
-                return@OnNavigationItemSelectedListener true
-            }
-            R.id.navigation_info -> {
-                changeFragment(InfoFragment(), getString(R.string.menu_title_info))
-                return@OnNavigationItemSelectedListener true
-            }
-        }
-        false
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
         changeFragment(ConverterFragment(), getString(R.string.menu_title_converter))
     }
@@ -57,9 +38,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Finish activity when reaching the last fragment.
-     */
     override fun onBackPressed() {
         val fragmentManager = supportFragmentManager;
         if (fragmentManager.backStackEntryCount > 1) {

@@ -9,12 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_info.*
 
-
-/**
- * Created by semav on 06.09.2016.
- */
 class InfoFragment : Fragment() {
-
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_info, container, false)
@@ -23,8 +18,7 @@ class InfoFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val appPackageName = activity?.packageName // getPackageName() from Context or Activity object
-
+        val appPackageName = activity?.packageName
 
         info_rate.setOnClickListener {
             try {

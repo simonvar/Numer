@@ -43,9 +43,9 @@ public class HelpFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_help, container, false);
         setHasOptionsMenu(true);
-        mNumber = getActivity().getIntent().getStringExtra(HelpActivity.EXTRA_NUMBER);
-        mSystemFrom = getActivity().getIntent().getStringExtra(HelpActivity.EXTRA_SYSTEM_FROM);
-        mSystemTo = getActivity().getIntent().getStringExtra(HelpActivity.EXTRA_SYSTEM_TO);
+        mNumber = getActivity().getIntent().getStringExtra(HelpActivity.Companion.getEXTRA_NUMBER());
+        mSystemFrom = getActivity().getIntent().getStringExtra(HelpActivity.Companion.getEXTRA_SYSTEM_FROM());
+        mSystemTo = getActivity().getIntent().getStringExtra(HelpActivity.Companion.getEXTRA_SYSTEM_TO());
 
         //задача
         String task = mNumber + "(" + mSystemFrom + ")" + " = ???(" + mSystemTo + ")";
