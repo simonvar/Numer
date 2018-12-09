@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         changeFragment(ConverterFragment(), getString(R.string.menu_title_converter))
+        bottom_bar.replaceMenu(R.menu.options)
     }
 
     fun changeFragment(f: Fragment, title: String, cleanStack: Boolean = true) {

@@ -41,5 +41,6 @@
     <string name="menu_title_calculator">Калькулятор</string>
     <string name="menu_title_info">Инфо</string>
     <string name="info_developer">Разработчик:</string>
+    <string name="settings">Настройки</string>
 
 </resources>

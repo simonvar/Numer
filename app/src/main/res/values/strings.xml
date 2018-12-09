@@ -50,4 +50,6 @@
     <string name="link_github" translatable="false">https://github.com/simonvar</string>
     <string name="info_developer">Developer:</string>
 
+    <string name="settings">Settings</string>
+
 </resources>
