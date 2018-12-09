@@ -45,7 +45,6 @@ dependencies {
 
     // UI
     implementation 'com.shawnlin:number-picker:2.4.7'
-    implementation 'com.github.okdroid:checkablechipview:1.0.3'
 
     testImplementation 'junit:junit:4.12'
 }

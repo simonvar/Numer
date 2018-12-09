@@ -23,5 +23,4 @@
         app:elevation="8dp"
         app:navigationIcon="@drawable/ic_menu" />
 
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
