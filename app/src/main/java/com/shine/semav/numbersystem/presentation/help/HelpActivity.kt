@@ -1,9 +1,10 @@
-package com.shine.semav.numbersystem
+package com.shine.semav.numbersystem.presentation.help
 
 import android.content.Context
 import android.content.Intent
 
 import androidx.fragment.app.Fragment
+import com.shine.semav.numbersystem.base.SingleFragmentActivity
 
 class HelpActivity : SingleFragmentActivity() {
 

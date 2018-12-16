@@ -1,10 +1,11 @@
-package com.shine.semav.numbersystem
+package com.shine.semav.numbersystem.presentation.converter
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.shine.semav.numbersystem.R
 
 class ConverterFragment : Fragment() {
 

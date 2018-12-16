@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem
+package com.shine.semav.numbersystem.presentation.info
 
 import android.content.Intent
 import android.net.Uri

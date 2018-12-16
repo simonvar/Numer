@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem
+package com.shine.semav.numbersystem.presentation.calculator
 
 import android.os.Bundle
 import android.view.LayoutInflater

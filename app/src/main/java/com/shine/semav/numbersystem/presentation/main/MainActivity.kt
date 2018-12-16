@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem
+package com.shine.semav.numbersystem.presentation.main
 
 import android.content.Context
 import android.os.Bundle
@@ -9,8 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.shine.semav.numbersystem.presentation.converter.ConverterFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
