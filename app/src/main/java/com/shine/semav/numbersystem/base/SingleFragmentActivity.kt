@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-
+import com.shine.semav.numbersystem.R
 
 abstract class SingleFragmentActivity : AppCompatActivity() {
 

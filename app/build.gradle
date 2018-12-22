@@ -45,6 +45,8 @@ dependencies {
 
     // UI
     implementation 'com.shawnlin:number-picker:2.4.7'
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+
 
     testImplementation 'junit:junit:4.12'
 }

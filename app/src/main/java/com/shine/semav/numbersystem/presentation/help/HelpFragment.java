@@ -6,16 +6,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.shine.semav.numbersystem.common.Translator;
-
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.shine.semav.numbersystem.R;
+import com.shine.semav.numbersystem.common.Translator;
 
 /**
  * Created by semav on 11.09.2016.
  */
 public class HelpFragment extends Fragment {
-    private  static final String TAG = "IntentHelp";
+    private static final String TAG = "IntentHelp";
 
     private String mNumber;
     private String mSystemFrom;
@@ -34,7 +35,7 @@ public class HelpFragment extends Fragment {
     TextView mTvHelpText2;
 
 
-    public static HelpFragment newInstance(){
+    public static HelpFragment newInstance() {
         return new HelpFragment();
     }
 
@@ -53,7 +54,7 @@ public class HelpFragment extends Fragment {
         mTextViewHelpTask.setText(task);
 
         //Шаг 1
-        mTvAlgorithm1 =  view.findViewById(R.id.help_1_algorithm);
+        mTvAlgorithm1 = view.findViewById(R.id.help_1_algorithm);
         mTvAlgorithm1.setText(algorithmTo10(mNumber, mSystemFrom));
 
         mTvHelpText1 = view.findViewById(R.id.help_step_1_algorithm_text);
@@ -73,24 +74,24 @@ public class HelpFragment extends Fragment {
         String answer = Translator.Translate(mNumber, mSystemFrom, mSystemTo);
         mTextViewHelpAnswer.setText(answer);
 
-        if (mSystemFrom.equals("10")){
+        if (mSystemFrom.equals("10")) {
             View card = view.findViewById(R.id.card_step_1);
-            ((ViewGroup)card.getParent()).removeView(card);
+            ((ViewGroup) card.getParent()).removeView(card);
 
             TextView header = view.findViewById(R.id.header_step_2);
             header.setText(R.string.help_step_1);
         }
 
 
-        if (mSystemTo.equals("10")){
+        if (mSystemTo.equals("10")) {
             View card = view.findViewById(R.id.card_step_2);
-            ((ViewGroup)card.getParent()).removeView(card);
+            ((ViewGroup) card.getParent()).removeView(card);
         }
 
         return view;
     }
 
-    private void algorithmFrom10(String number, String systemTo){
+    private void algorithmFrom10(String number, String systemTo) {
         long num = Long.parseLong(number);
         long ost;
         long system = Long.parseLong(systemTo);
@@ -99,16 +100,16 @@ public class HelpFragment extends Fragment {
         StringBuilder strOst = new StringBuilder(mTvAlgorithm2_ost.getText().toString());
         StringBuilder strRes = new StringBuilder(mTvAlgorithm2_res.getText().toString());
 
-        while (num > 0){
+        while (num > 0) {
 
             ost = num % system;
             strOst.append(String.valueOf(ost)).append("\n");
 
-           if (ost >= 10) {
-               ost += 55L;
-               char c = (char) ost;
-               strRes.append(c);
-           }else{
+            if (ost >= 10) {
+                ost += 55L;
+                char c = (char) ost;
+                strRes.append(c);
+            } else {
                 strRes.append(String.valueOf(ost));
             }
             strRes.append("\n");
@@ -121,22 +122,22 @@ public class HelpFragment extends Fragment {
         mTvAlgorithm2_res.setText(strRes.toString());
     }
 
-    private String algorithmTo10(String number, String systemFrom){
+    private String algorithmTo10(String number, String systemFrom) {
         StringBuilder result = new StringBuilder(number + "(" + systemFrom + ") = ");
         char ch;
 
-        for (int i = number.length() - 1; i >= 0; i--){
+        for (int i = number.length() - 1; i >= 0; i--) {
             ch = number.charAt(i);
 
             if (ch >= 'A' && ch <= 'Z') {
                 int mul = (int) ch - 55;
                 result.append(String.valueOf(mul));
-            }else{
+            } else {
                 result.append(number.charAt(i));
             }
 
             result.append("*").append(systemFrom).append(getAllPower(number.length() - 1 - i));
-            if (i != 0){
+            if (i != 0) {
                 result.append(" + ");
             }
         }
@@ -146,16 +147,16 @@ public class HelpFragment extends Fragment {
         return result.toString();
     }
 
-    private String getAllPower(int i){
-        if(i % 10 == i){
+    private String getAllPower(int i) {
+        if (i % 10 == i) {
             return getPower(i);
-        }else{
-            return getPower((i/10)%10) + getPower(i%10);
+        } else {
+            return getPower((i / 10) % 10) + getPower(i % 10);
         }
     }
 
-    private String getPower(int i){
-        switch (i){
+    private String getPower(int i) {
+        switch (i) {
             case 0:
                 return "⁰";
             case 1:

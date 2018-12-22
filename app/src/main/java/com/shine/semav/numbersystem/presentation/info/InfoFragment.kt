@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.shine.semav.numbersystem.R
 import kotlinx.android.synthetic.main.fragment_info.*
 
 class InfoFragment : Fragment() {
