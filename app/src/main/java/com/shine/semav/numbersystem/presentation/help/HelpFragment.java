@@ -22,17 +22,17 @@ public class HelpFragment extends Fragment {
     private String mSystemFrom;
     private String mSystemTo;
 
-    TextView mTextViewHelpTask;
-    TextView mTextViewHelpAnswer;
+    private TextView mTextViewHelpTask;
+    private TextView mTextViewHelpAnswer;
 
-    TextView mTvAlgorithm1;
+    private TextView mTvAlgorithm1;
 
-    TextView mTvAlgorithm2_div;
-    TextView mTvAlgorithm2_ost;
-    TextView mTvAlgorithm2_res;
+    private TextView mTvAlgorithm2_div;
+    private TextView mTvAlgorithm2_ost;
+    private TextView mTvAlgorithm2_res;
 
-    TextView mTvHelpText1;
-    TextView mTvHelpText2;
+    private TextView mTvHelpText1;
+    private TextView mTvHelpText2;
 
 
     public static HelpFragment newInstance() {
@@ -103,17 +103,17 @@ public class HelpFragment extends Fragment {
         while (num > 0) {
 
             ost = num % system;
-            strOst.append(String.valueOf(ost)).append("\n");
+            strOst.append(ost).append("\n");
 
             if (ost >= 10) {
                 ost += 55L;
                 char c = (char) ost;
                 strRes.append(c);
             } else {
-                strRes.append(String.valueOf(ost));
+                strRes.append(ost);
             }
             strRes.append("\n");
-            strDiv.append(String.valueOf(num)).append(" / ").append(systemTo).append("\n");
+            strDiv.append(num).append(" / ").append(systemTo).append("\n");
             num /= system;
         }
 
@@ -131,7 +131,7 @@ public class HelpFragment extends Fragment {
 
             if (ch >= 'A' && ch <= 'Z') {
                 int mul = (int) ch - 55;
-                result.append(String.valueOf(mul));
+                result.append(mul);
             } else {
                 result.append(number.charAt(i));
             }
