@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Конвертер</string>
+    <string name="app_name">Numer</string>
 
     <string name="clear_all_button_text">Очистить все</string>
     <string name="result_text_view_hint">Результат</string>
@@ -41,5 +41,6 @@
     <string name="menu_title_calculator">Калькулятор</string>
     <string name="menu_title_info">Инфо</string>
     <string name="info_developer">Разработчик:</string>
+    <string name="settings">Настройки</string>
 
 </resources>

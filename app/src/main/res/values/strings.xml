@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Converter</string>
+    <string name="app_name">Numer</string>
     <string name="info_name">Info</string>
     <string name="calculator_name">Calculator</string>
 
@@ -49,5 +49,7 @@
     <string name="link_email" translatable="false">semavar3@gmail.com</string>
     <string name="link_github" translatable="false">https://github.com/simonvar</string>
     <string name="info_developer">Developer:</string>
+
+    <string name="settings">Settings</string>
 
 </resources>

@@ -8,12 +8,17 @@
 
     <item
         android:id="@+id/navigation_calculator"
-        android:icon="@drawable/ic_menu_calculator"
+        android:icon="@drawable/calculator"
         android:title="@string/menu_title_calculator" />
 
     <item
-        android:id="@+id/navigation_info"
-        android:icon="@drawable/ic_menu_info"
-        android:title="@string/menu_title_info" />
+        android:id="@+id/navigation_rome"
+        android:icon="@drawable/ic_rome"
+        android:title="Roman numbers" />
+
+    <item
+        android:id="@+id/navigation_sexagesimal"
+        android:icon="@drawable/ic_sexagesimal"
+        android:title="Base 60" />
 
 </menu>
