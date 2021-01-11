@@ -2,14 +2,24 @@ package io.github.simonvar.numer.presentation.help
 
 import android.content.Context
 import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-import androidx.fragment.app.Fragment
-import io.github.simonvar.numer.base.SingleFragmentActivity
+import com.github.simonvar.numer.R
 
-class HelpActivity : SingleFragmentActivity() {
+class HelpActivity : AppCompatActivity() {
 
-    override fun createFragment(): Fragment {
-        return HelpFragment.newInstance()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_fragment)
+
+        val fragmentManager = supportFragmentManager
+        var fragment = fragmentManager.findFragmentById(R.id.fragment_container)
+
+        if (fragment == null) {
+            fragment = HelpFragment.newInstance()
+            fragmentManager.beginTransaction().add(R.id.fragment_container, fragment).commit()
+        }
     }
 
     companion object {
