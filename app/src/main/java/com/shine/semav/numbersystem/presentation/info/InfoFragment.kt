@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.shine.semav.numbersystem.BuildConfig
 import com.shine.semav.numbersystem.R
-import kotlinx.android.synthetic.main.fragment_info.*
+import com.shine.semav.numbersystem.databinding.FragmentInfoBinding
 
 class InfoFragment : Fragment() {
 
@@ -17,10 +17,11 @@ class InfoFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_info, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val binding = FragmentInfoBinding.bind(view)
 
-        info_rate.setOnClickListener {
+        binding.infoRate.setOnClickListener {
             try {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + PACKAGE)))
             } catch (anfe: Throwable) {
@@ -28,15 +29,12 @@ class InfoFragment : Fragment() {
             }
         }
 
-        fragment_info_github.setOnClickListener {
+        binding.fragmentInfoGithub.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link_github))))
         }
-
     }
 
     companion object {
         const val PACKAGE = BuildConfig.APPLICATION_ID
     }
-
-
 }

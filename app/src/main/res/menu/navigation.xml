@@ -1,24 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/navigation_converter"
-        android:icon="@drawable/ic_menu_converter"
-        android:title="@string/menu_title_converter" />
+    <group android:checkableBehavior="single">
 
-    <item
-        android:id="@+id/navigation_calculator"
-        android:icon="@drawable/calculator"
-        android:title="@string/menu_title_calculator" />
+        <item
+            android:id="@+id/navigation_converter"
+            android:icon="@drawable/ic_menu_converter"
+            android:title="@string/menu_title_converter" />
+        <item
+            android:id="@+id/navigation_calculator"
+            android:icon="@drawable/calculator"
+            android:title="@string/menu_title_calculator" />
 
-    <item
-        android:id="@+id/navigation_rome"
-        android:icon="@drawable/ic_rome"
-        android:title="Roman numbers" />
+        <item
+            android:id="@+id/navigation_group_pro"
+            android:title="PRO"
+            app:showAsAction="ifRoom|withText">
 
-    <item
-        android:id="@+id/navigation_sexagesimal"
-        android:icon="@drawable/ic_sexagesimal"
-        android:title="Base 60" />
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/navigation_rome"
+                        android:icon="@drawable/ic_rome"
+                        android:title="Roman numbers" />
+                    <item
+                        android:id="@+id/navigation_sexagesimal"
+                        android:icon="@drawable/ic_sexagesimal"
+                        android:title="Base 60" />
+                    <item
+                        android:icon="@drawable/ic_arrow_circle_down"
+                        android:title="Cistercian numerals" />
+                </group>
+            </menu>
+
+        </item>
+
+    </group>
 
 </menu>

@@ -14,5 +14,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/navigation" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>

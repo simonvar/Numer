@@ -10,20 +10,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.shine.semav.numbersystem.R
+import com.shine.semav.numbersystem.databinding.ActivityMainBinding
 import com.shine.semav.numbersystem.presentation.converter.ConverterFragment
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(binding.bottomBar)
         changeFragment(ConverterFragment(), getString(R.string.menu_title_converter))
-        setSupportActionBar(bottom_bar)
     }
 
-    fun changeFragment(f: Fragment, title: String, cleanStack: Boolean = true) {
+    private fun changeFragment(f: Fragment, title: String, cleanStack: Boolean = true) {
         val ft = supportFragmentManager.beginTransaction()
         if (cleanStack) {
             clearBackStack()
@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        when (item?.itemId) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
             R.id.options_info -> toast("Info")
             R.id.options_settings -> toast("Settings")
             android.R.id.home -> {
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    fun clearBackStack() {
+    private fun clearBackStack() {
         val manager = supportFragmentManager
         if (manager.backStackEntryCount > 0) {
             val first = manager.getBackStackEntryAt(0)
