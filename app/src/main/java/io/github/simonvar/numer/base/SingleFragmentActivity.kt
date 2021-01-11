@@ -1,11 +1,11 @@
-package com.shine.semav.numbersystem.base
+package io.github.simonvar.numer.base
 
 import android.os.Bundle
 
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.shine.semav.numbersystem.R
+import com.github.simonvar.numer.R
 
 abstract class SingleFragmentActivity : AppCompatActivity() {
 

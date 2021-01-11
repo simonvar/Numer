@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem.presentation.help;
+package io.github.simonvar.numer.presentation.help;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.shine.semav.numbersystem.R;
-import com.shine.semav.numbersystem.common.Translator;
+import com.github.simonvar.numer.R;
+import io.github.simonvar.numer.common.Translator;
 
 /**
  * Created by semav on 11.09.2016.

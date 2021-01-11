@@ -1,11 +1,11 @@
-package com.shine.semav.numbersystem.presentation.calculator
+package io.github.simonvar.numer.presentation.calculator
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.shine.semav.numbersystem.R
+import com.github.simonvar.numer.R
 
 class CalculatorFragment : Fragment() {
 

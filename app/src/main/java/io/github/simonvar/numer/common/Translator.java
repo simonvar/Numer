@@ -1,6 +1,4 @@
-package com.shine.semav.numbersystem.common;
-
-import android.util.Log;
+package io.github.simonvar.numer.common;
 
 /**
  * Created by semav on 04.09.2016.

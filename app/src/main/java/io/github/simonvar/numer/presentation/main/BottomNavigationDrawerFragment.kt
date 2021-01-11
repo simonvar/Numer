@@ -1,11 +1,11 @@
-package com.shine.semav.numbersystem.presentation.main
+package io.github.simonvar.numer.presentation.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.shine.semav.numbersystem.R
+import com.github.simonvar.numer.R
 
 class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

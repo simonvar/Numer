@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem.presentation.info
+package io.github.simonvar.numer.presentation.info
 
 import android.content.Intent
 import android.net.Uri
@@ -7,9 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.shine.semav.numbersystem.BuildConfig
-import com.shine.semav.numbersystem.R
-import com.shine.semav.numbersystem.databinding.FragmentInfoBinding
+import com.github.simonvar.numer.BuildConfig
+import com.github.simonvar.numer.R
+import com.github.simonvar.numer.databinding.FragmentInfoBinding
 
 class InfoFragment : Fragment() {
 

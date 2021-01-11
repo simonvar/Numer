@@ -1,16 +1,14 @@
-package com.shine.semav.numbersystem.presentation.converter
+package io.github.simonvar.numer.presentation.converter
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
-import com.shine.semav.numbersystem.R
-import com.shine.semav.numbersystem.common.Translator
-import com.shine.semav.numbersystem.databinding.FragmentConverterBinding
+import com.github.simonvar.numer.R
+import io.github.simonvar.numer.common.Translator
+import com.github.simonvar.numer.databinding.FragmentConverterBinding
 
 class ConverterFragment : Fragment() {
 

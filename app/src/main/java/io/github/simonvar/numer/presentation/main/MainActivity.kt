@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem.presentation.main
+package io.github.simonvar.numer.presentation.main
 
 import android.content.Context
 import android.os.Bundle
@@ -9,9 +9,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.shine.semav.numbersystem.R
-import com.shine.semav.numbersystem.databinding.ActivityMainBinding
-import com.shine.semav.numbersystem.presentation.converter.ConverterFragment
+import com.github.simonvar.numer.R
+import com.github.simonvar.numer.databinding.ActivityMainBinding
+import io.github.simonvar.numer.presentation.converter.ConverterFragment
 
 class MainActivity : AppCompatActivity() {
 

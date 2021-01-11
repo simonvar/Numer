@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem;
+package io.github.simonvar.numer;
 
 import org.junit.Test;
 
