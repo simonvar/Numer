@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem;
+package space.simonvar.numer;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import com.shine.semav.numbersystem.common.Translator;
+import space.simonvar.numer.common.Translator;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 

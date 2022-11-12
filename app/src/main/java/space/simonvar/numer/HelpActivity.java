@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem;
+package space.simonvar.numer;
 
 import android.content.Context;
 import android.content.Intent;

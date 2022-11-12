@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.shine.semav.numbersystem'
+    namespace 'space.simonvar.numer'
     compileSdkVersion 33
 
     defaultConfig {
@@ -44,7 +44,6 @@ android {
 }
 
 dependencies {
-    // Compose
     def composeBom = platform('androidx.compose:compose-bom:2022.10.00')
     implementation composeBom
     androidTestImplementation composeBom

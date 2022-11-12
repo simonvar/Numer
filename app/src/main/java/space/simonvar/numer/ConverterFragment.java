@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem;
+package space.simonvar.numer;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import com.shine.semav.numbersystem.common.StringPreferences;
-import com.shine.semav.numbersystem.common.Translator;
+import space.simonvar.numer.common.StringPreferences;
+import space.simonvar.numer.common.Translator;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;

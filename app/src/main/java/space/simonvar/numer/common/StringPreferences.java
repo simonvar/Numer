@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem.common;
+package space.simonvar.numer.common;
 
 import android.content.Context;
 import android.preference.PreferenceManager;

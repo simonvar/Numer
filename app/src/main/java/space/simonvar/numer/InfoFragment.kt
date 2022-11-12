@@ -1,4 +1,4 @@
-package com.shine.semav.numbersystem
+package space.simonvar.numer
 
 import android.content.Intent
 import android.net.Uri
