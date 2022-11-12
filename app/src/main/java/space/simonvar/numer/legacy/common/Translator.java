@@ -1,8 +1,5 @@
-package space.simonvar.numer.common;
+package space.simonvar.numer.legacy.common;
 
-/**
- * Created by semav on 04.09.2016.
- */
 public class Translator {
 
     public static String Translate(String number, String systemFrom, String systemTo) {

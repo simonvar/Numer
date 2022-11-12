@@ -1,4 +1,4 @@
-package space.simonvar.numer;
+package space.simonvar.numer.legacy;
 
 import android.content.Context;
 import android.content.Intent;

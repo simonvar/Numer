@@ -1,4 +1,4 @@
-package space.simonvar.numer
+package space.simonvar.numer.legacy
 
 import android.content.Intent
 import android.net.Uri
@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import space.simonvar.numer.R
 
 class InfoFragment : Fragment() {
 

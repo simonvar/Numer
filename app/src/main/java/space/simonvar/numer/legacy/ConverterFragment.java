@@ -1,4 +1,4 @@
-package space.simonvar.numer;
+package space.simonvar.numer.legacy;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -16,8 +16,10 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import space.simonvar.numer.common.StringPreferences;
-import space.simonvar.numer.common.Translator;
+
+import space.simonvar.numer.R;
+import space.simonvar.numer.legacy.common.StringPreferences;
+import space.simonvar.numer.legacy.common.Translator;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;

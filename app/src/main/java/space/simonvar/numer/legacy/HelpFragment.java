@@ -1,4 +1,4 @@
-package space.simonvar.numer;
+package space.simonvar.numer.legacy;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,7 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import space.simonvar.numer.common.Translator;
+import space.simonvar.numer.R;
+import space.simonvar.numer.legacy.common.Translator;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;

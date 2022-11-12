@@ -1,4 +1,4 @@
-package space.simonvar.numer;
+package space.simonvar.numer.legacy;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,9 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import space.simonvar.numer.common.Translator;
+
+import space.simonvar.numer.R;
+import space.simonvar.numer.legacy.common.Translator;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 

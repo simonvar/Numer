@@ -1,4 +1,4 @@
-package space.simonvar.numer.common;
+package space.simonvar.numer.legacy.common;
 
 import android.content.Context;
 import android.preference.PreferenceManager;

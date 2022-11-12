@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import space.simonvar.numer.legacy.CalculatorFragment
+import space.simonvar.numer.legacy.ConverterFragment
+import space.simonvar.numer.legacy.InfoFragment
 
-class MainActivity : AppCompatActivity() {
+class NumerActivity : AppCompatActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
