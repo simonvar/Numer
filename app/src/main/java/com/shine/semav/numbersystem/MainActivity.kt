@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +29,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        findViewById<BottomNavigationView>(R.id.navigation)
+            .setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
         changeFragment(ConverterFragment(), getString(R.string.menu_title_converter))
     }
@@ -57,9 +56,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Finish activity when reaching the last fragment.
-     */
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         val fragmentManager = supportFragmentManager;
         if (fragmentManager.backStackEntryCount > 1) {
