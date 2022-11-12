@@ -3,9 +3,6 @@ package com.shine.semav.numbersystem.common;
 import android.content.Context;
 import android.preference.PreferenceManager;
 
-/**
- * Created by semav on 18.09.2016.
- */
 public class StringPreferences {
     private static final String PREF_STRING_NUMBER = "numberPref";
     private static final String PREF_STRING_FROM = "fromPref";

@@ -22,9 +22,6 @@ import com.shine.semav.numbersystem.common.Translator;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-/**
- * Created by semav on 27.08.2016.
- */
 public class ConverterFragment extends Fragment {
 
     private EditText mEditTextNumber;

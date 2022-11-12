@@ -11,9 +11,6 @@ import com.shine.semav.numbersystem.common.Translator;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-/**
- * Created by semav on 11.09.2016.
- */
 public class HelpFragment extends Fragment {
     private  static final String TAG = "IntentHelp";
 

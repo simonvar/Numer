@@ -5,9 +5,6 @@ import android.content.Intent;
 
 import androidx.fragment.app.Fragment;
 
-/**
- * Created by semav on 11.09.2016.
- */
 public class HelpActivity extends SingleFragmentActivity {
 
     public static final String EXTRA_NUMBER = "com.shine.semav.numbersystem.number";

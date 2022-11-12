@@ -15,9 +15,6 @@ import com.shine.semav.numbersystem.common.Translator;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-/**
- * Created by semav on 04.09.2016.
- */
 public class CalculatorFragment extends Fragment {
 
     private EditText mEditTextNumber1;
