@@ -1,5 +1,8 @@
 ### Fastest zero abstraction number conversion android native app
 
+![CI](https://github.com/simonvar/Numer/workflows/CI/badge.svg)
+![Release](https://github.com/simonvar/Numer/workflows/Build%20and%20Release%20APK/badge.svg)
+
 ## CI/CD Pipeline
 
 This project includes automated GitHub Actions workflows for continuous integration and deployment:
